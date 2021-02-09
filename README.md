@@ -1,2 +1,2 @@
-# multi_docker_k8s
-implementation of a multidocker application with kubernetes
+# multi-k8s
+This repository holds a web app managed by kubernetes
