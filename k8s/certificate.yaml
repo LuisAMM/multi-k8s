@@ -7,14 +7,14 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: luisalfredomunozmolina.tk
+  commonName: elperrogordo.tk
   dnsNames:
-    - luisalfredomunozmolina.tk
-    - www.luisalfredomunozmolina.tk
+    - elperrogordo.tk
+    - www.elperrogordo.tk
   acme:
     config:
       - http01:
           ingressClass: nginx
         domains:
-          - luisalfredomunozmolina.tk
-          - www.luisalfredomunozmolina.tk 
+          - elperrogordo.tk
+          - www.elperrogordo.tk 
