@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: luisalfredomunozmolina-tk-tls
+spec:
+  secretName: luisalfredomunozmolina-tk
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: luisalfredomunozmolina.tk
+  dnsNames:
+    - luisalfredomunozmolina.tk
+    - www.luisalfredomunozmolina.tk
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - luisalfredomunozmolina.tk
+          - www.luisalfredomunozmolina.tk
