@@ -13,7 +13,7 @@ spec:
   #   - hosts:
   #       - elperrogordo.tk
   #       - www.elperrogordo.tk
-  #     secretName: LAMM-tk
+  #     secretName: lamm-tk
   rules:
     # - host: elperrogordo.tk
     - http:

@@ -1,9 +1,9 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  name: LAMM-tk-tls
+  name: lamm-tk-tls
 spec:
-  secretName: LAMM-tk
+  secretName: lamm-tk
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
