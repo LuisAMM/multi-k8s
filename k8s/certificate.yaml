@@ -7,8 +7,9 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: www.elperrogordo.tk
+  commonName: elperrogordo.tk
   dnsNames:
+    - testing.elperrogordo.tk
     - www.elperrogordo.tk
   acme:
     config:
@@ -16,3 +17,4 @@ spec:
           ingressClass: nginx
         domains:
           - www.elperrogordo.tk 
+          - testing.elperrogordo.tk
