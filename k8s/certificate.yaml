@@ -7,7 +7,7 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: elperrogordo.tk
+  commonName: www.elperrogordo.tk
   dnsNames:
     - testing.elperrogordo.tk
     - www.elperrogordo.tk
