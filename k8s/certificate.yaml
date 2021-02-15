@@ -1,20 +1,20 @@
-# apiVersion: cert-manager.io/v1
-# kind: Certificate
-# metadata:
-#   name: LAMM-tk-tls
-# spec:
-#   secretName: LAMM-tk
-#   issuerRef:
-#     name: letsencrypt-prod
-#     kind: ClusterIssuer
-#   commonName: elperrogordo.tk
-#   dnsNames:
-#     - elperrogordo.tk
-#     - www.elperrogordo.tk
-#   acme:
-#     config:
-#       - http01:
-#           ingressClass: nginx
-#         domains:
-#           - elperrogordo.tk
-#           - www.elperrogordo.tk 
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: LAMM-tk-tls
+spec:
+  secretName: LAMM-tk
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: elperrogordo.tk
+  dnsNames:
+    - elperrogordo.tk
+    - www.elperrogordo.tk
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - elperrogordo.tk
+          - www.elperrogordo.tk 
